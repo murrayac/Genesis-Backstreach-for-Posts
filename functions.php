@@ -1,6 +1,6 @@
 //* Enqueue scripts for backstretch
-add_action( 'wp_enqueue_scripts', 'whitespace_front_page_enqueue_scripts' );
-function whitespace_front_page_enqueue_scripts() {
+add_action( 'wp_enqueue_scripts', 'whitespace_featured_post_enqueue_scripts' );
+function whitespace_featured_post_enqueue_scripts() {
 	
 	$image = get_option( 'whitespace-home-image', sprintf( '%s/images/welcome.jpg', get_stylesheet_directory_uri() ) );
 	
